@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Center Content</title>
+	
+	<style type="text/css">
+	
+	body {
+		background-color: #c0c;
+	}
+	
+	.centerElement {
+		background-color: #fff;
+		border: 2px solid #c0c0c0;
+		padding: 30px;
+		width: 400px;
+		height: 400px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -232px;
+		margin-left: -232px;
+		z-index: 100;
+	}
+	
+	.overlay {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0,0,0,.5);
+		z-index: 90;
+	}
+	
+	</style>
+	
+</head>
+
+<body>
+
+<h1>This is an example of a centered element</h1>
+
+<div class="centerElement">
+	This element will be centered on the page... I hope!
+</div>
+
+<div class="overlay"></div>
+
+</body>
+</html>

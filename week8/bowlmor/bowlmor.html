@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Bowlmor Example</title>
+	
+	<style type="text/css">
+	@import url(http://fonts.googleapis.com/css?family=Luckiest+Guy|Mr+Dafoe);
+	
+	.callout {
+		border: 2px solid black;
+		background: url(images/wood.jpg);
+		background-size: 100%;
+		padding: 10px 10px 40px;
+		margin: 30px;
+		width: 196px;
+		border-radius: 5px;
+		font: 12px arial;
+		color: #fff;
+		position: relative;
+		float: left;
+		height: 100px;
+	}
+	
+	.callout h2 {
+		margin: 0;
+		line-height: 1em;
+		font-family: 'Mr Dafoe', cursive;
+		font-weight: normal;
+		text-align: center;
+		font-size: 30px;
+		text-indent: -10px;
+	}
+	
+	
+	.callout h2:before,
+	.callout h2:after {
+		content: "\2605";
+		font: .75em arial;
+		color: rgba(255,255,255,.5);
+		position: relative;
+		top: -5px;
+	}
+	
+	.callout h2:before {
+		left: -10px;
+	}
+	
+	.callout h2:after {
+		right: -15px;
+	}
+	
+	.callout p {
+		margin: 0;
+	}
+	
+	.callout a {
+		text-decoration: none;
+		color: #fff;
+		background: #45484d; /* Old browsers */
+		background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+		
+		
+		position: absolute;
+		left: -12px;
+		right: -12px;
+		bottom: -2px;
+		padding: 10px 20px;
+		font-family: 'Luckiest Guy', cursive;
+		text-align: center;
+	}
+	
+	.callout a:before {
+		content: "";
+		border-left: 10px solid transparent;
+		border-bottom: 5px solid gray;
+		position: absolute;
+		left: 0;
+		top: -5px;
+	}
+	
+	.callout a:after {
+		content: "";
+		border-right: 10px solid transparent;
+		border-bottom: 5px solid gray;
+		position: absolute;
+		right: 0;
+		top: -5px;
+	}
+	
+	</style>
+	
+</head>
+<body>
+	<section class="callout">
+		<h2>Header Text</h2>
+		<p>Content Text. Content Text. Content Text.</p>
+		<a href="#">Call to Action Text</a>
+	</section>
+	
+	<section class="callout">
+		<h2>Header Text</h2>
+		<p>Content Text. Content Text. Content Text.</p>
+		<a href="#">Call to Action Text</a>
+	</section>
+	
+	<section class="callout">
+		<h2>Header Text</h2>
+		<p>Content Text. Content Text. Content Text.</p>
+		<a href="#">Call to Action Text</a>
+	</section>
+
+
+
+
+
+</body>
+</html>

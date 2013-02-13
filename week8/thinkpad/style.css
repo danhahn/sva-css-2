@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Strait);
+.ad h2,
+.ad p {
+  margin: 0;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'Strait', sans-serif;
+  color: #ffffff;
+  letter-spacing: 3px;
+}
+.ad h2 {
+  background-color: #a93c2a;
+  display: inline-block;
+  padding: 5px 5px 2px;
+  margin-left: 20px;
+  position: relative;
+}
+.ad h2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  border-right: 20px solid #782b1e;
+  border-top: 31px solid transparent;
+}
+.ad p span {
+  background-color: #ce4e38;
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+}
+.ad p span:first-child:before {
+  content: "";
+  width: 7px;
+  height: 19px;
+  background-color: #72271a;
+  position: absolute;
+  top: 7px;
+  right: -7px;
+}
+.ad p span:last-child {
+  position: relative;
+  top: 7px;
+  left: 7px;
+}
+.ad p span:last-child:before {
+  border-left: 7px solid #74271a;
+  border-top: 7px solid transparent;
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: -7px;
+}
+.ad p span:last-child:after {
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid #74271a;
+  content: "";
+  position: absolute;
+  left: -7px;
+  bottom: 0;
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */

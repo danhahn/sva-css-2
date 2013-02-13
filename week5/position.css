@@ -1,0 +1,114 @@
+body {
+	font: 12px arial;
+	background-color: #ededed;
+	margin: 20px 20px 60px;
+}
+
+h1, h2, h3, h4, p, ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 10px 0;
+	border-bottom: 2px solid #753c52;
+	padding-bottom: 3px;
+}
+
+ul {
+	margin: 10px 0;
+	padding-left: 15px;
+}
+
+.positionContainer {
+	margin: 10px 0;
+	background-color: #8f8f8f;
+}
+
+.positionElement {
+	border: 5px solid #753c52;
+	background-color: #c0c0c0;
+	color: #333;
+	padding: 10px;
+}
+
+.static {
+	position: static;
+	left: 10px;
+}
+
+.relative {
+	position: relative;
+	left: 10px;
+	top: 10px;
+}
+
+.absolute {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.fixed  {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.overlay {
+	background-color: rgba(0,0,0,.3);
+	position: static;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.nested {
+	height: 300px;
+	position: relative;
+}
+
+.nested .absolute {
+	position: absolute;
+	bottom: -10px;
+	left: -10px;
+	top: inherit;
+	right: inherit;
+}
+
+.zindex {
+	height: 300px;
+	position: relative;
+}
+
+.item1 {
+	position: absolute;
+	top: 30px;
+	left: 60px;
+	z-index: 2;
+}
+
+.item2 {
+	position: absolute;
+	top: 50px;
+	left: 80px;
+}
+
+.zindex div:hover {
+	background-color: orange;
+	z-index: 3;
+}
+
+
+.visExample {
+	background-color: red;
+}
+
+.hidden {
+	/*visibility: hidden;*/
+	display: none;
+}
+

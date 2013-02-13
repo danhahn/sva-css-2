@@ -1,0 +1,93 @@
+body {
+	font: 12px arial;
+	color: #3d3d3d;
+	margin: 0;
+	background: #fff url(images/site.png) no-repeat center top;
+}
+
+h1, h2, h3, p, ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #cf0513;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#site {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#header {
+	border-bottom: 2px solid #d8d8d8;
+	background: url(images/ipodHeader.jpg) no-repeat right top;
+	height: 55px;
+}
+
+#header h1 {
+	padding: 20px 15px 0;
+}
+
+#content {
+	padding: 20px 15px;
+	background: #fff url(images/content.png) repeat-x;
+}
+
+#content > p {
+	margin: 10px 0;
+	line-height: 1.5em;
+	text-align: justify;
+}
+
+.photoCaption {
+	border: 2px solid #8d8d8d;
+	padding: 8px;
+	background-color: #efefef;
+	float: right;
+	margin: 10px 0 10px 10px;
+}
+
+.photoCaption p {
+	margin: 10px 0 2px;
+	text-align: center;
+	line-height: 1em;
+	font-weight: bold;
+}
+
+.ipod {
+	border: 2px solid #d8d8d8;
+	padding: 8px;
+	background-color: #efefef;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.ipod.last {
+	margin-right: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+#footer {
+	background: #d8d8d8 url(images/footer.jpg) repeat-x;
+	padding: 40px 15px 20px;
+}
+
+#footer p {
+	font-size: 10px;
+	margin: 5px 0;
+}
+
+#footer a {
+	color: #068fd5;
+}

@@ -1,0 +1,58 @@
+@spacing: 10px;
+@baseWidth: 400px;
+@base: #663333;
+
+// -- do not edit below --;
+
+@bgcolor: #c0c0c0;
+@font-size: @spacing+2; 
+
+@border-width: @spacing/2;
+@alt: spin(@base, 180);
+
+@baseDark: darken(@base, 5%);
+@altDark: darken(@alt, 5%);
+
+@width: @baseWidth - (@border-width*2) - (@spacing*2*2);
+
+.grad(@start: red, @end: blue) {
+	background-image: -moz-linear-gradient(top, @start, @end);
+	background-image: -webkit-linear-gradient(top, @start, @end);
+	background-image: -o-linear-gradient(top, @start, @end);
+	background-image: -ms-linear-gradient(top, @start, @end);
+	background-image: linear-gradient(top, @start, @end);
+}
+
+body {
+	background-color: @bgcolor;
+	font: @font-size arial;
+}
+/* css comment */
+// less comment
+div {
+	float: left;
+	width: @width;
+	border: @border-width solid black;
+	background-color: #fff;
+	padding: @spacing @spacing*2;
+	margin: @spacing 0;
+	h2, p {
+		margin: @spacing 0;
+	}
+	
+	h2 {
+		.grad(yellow,green);
+		margin: -@spacing -@spacing*2 @spacing;
+		padding: @spacing @spacing*2;
+		font-size: (@spacing+2)*1.5;
+	}
+	
+	&.example {
+		background-color: @base;
+		border-color: @baseDark;
+	}
+	&.box {
+		background-color: @alt;
+		border-color: @altDark;
+	}
+}

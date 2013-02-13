@@ -1,0 +1,41 @@
+body {
+	background-color: #c0c0c0;
+	font: 12px arial;
+	margin: 0;
+}
+
+#site {
+	width: 800px;
+	margin: 0 auto;
+	background: url(images/two-column.gif);
+}
+
+header {
+	background-color: #3ea2b7;
+	height: 75px;
+	border-bottom: 2px solid black;
+}
+
+nav, article {
+	float: left;
+}
+
+nav {
+	width: 200px;
+	height: 200px;
+}
+
+article {
+	width: 560px;
+	height: 600px;
+	padding: 20px;
+}
+
+footer {
+	clear: both;
+	height: 30px;
+	background-color: #c0c0c0;
+	border-top: 2px solid black;
+	padding: 20px;
+	text-align: right;
+}

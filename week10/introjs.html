@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro to JS</title>
+	<style type="text/css">
+		body {
+			background-color: #c0c0c0;
+			font: 12px arial;
+		}
+	</style>
+	
+	<script type="text/javascript">
+	
+		var myVar;
+		
+		myVar = "Hello World!";
+		
+		function myFunction(passVar) {
+			var outcome;
+			if(passVar != 1) {
+				outcome = "Good things";
+			}
+			else {
+				outcome = "Bad things";
+			}
+			
+			alert(outcome);
+			
+		}
+		
+		
+	</script>
+		
+</head>
+
+<body>
+
+<h1>Intro to JS</h1>
+
+<button type="button" onclick="myFunction(1);">Button 1</button>
+<button type="button" onclick="myFunction(2);">Button 2</button>
+</body>
+</html>

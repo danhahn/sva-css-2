@@ -1,0 +1,65 @@
+body {
+	font: 12px arial;
+	margin: 0;
+	/*background: url(images/gradback.jpg) repeat-x #9ed07b;*/
+	background: url(images/grand-canyon.jpg) fixed;
+	background-size: 100%;
+}
+
+h1, h2, p {
+	margin: 0;
+}
+
+#wrapper {
+	width: 760px;
+	padding: 20px;
+	margin: 0 auto;
+	background-color: rgba(255,255,255,.7);
+}
+
+.backgroundExample {
+	height: 350px;
+	border: 1px solid gray;
+	margin: 10px 0;
+	background-color: lime;
+	background-image: url("images/tileback.gif");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 137px 23px;
+	
+	background: url(images/tileback.gif) repeat-y center blue;
+}
+
+ul li {
+	list-style-type: square;
+	list-style-position: inside;
+	list-style-image: url(images/smDot.gif);
+	
+	list-style: url(images/smDot.gif);
+}
+
+ol li a {
+	color: red;
+	background: url(images/pdf_icon.jpg) no-repeat right center;
+	padding: 2px 18px 2px 0;
+	font-size: 10px;
+	display: inline-block;
+}
+
+.logo {
+	width: 200px;
+	height: 60px;
+	background: url(images/sva1.png);
+	display: block;
+	
+	text-indent: -999em;
+	
+	outline: none;
+	
+}
+
+
+
+
+
+

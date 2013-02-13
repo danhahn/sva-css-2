@@ -1,0 +1,53 @@
+body {
+	font: 12px arial;
+	background-color: #c0c0c0;
+	margin: 0;
+}
+
+h1, h2, h3, p {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+#site {
+	background-color: orange;
+	margin: 0 auto;
+	min-width: 750px;
+	max-width: 1200px;
+}
+
+header {
+	background-color: aqua;
+	height: 75px;
+}
+
+nav {
+	width: 200px;
+	height: 200px;
+	background-color: teal;
+	float: left;
+}
+
+article {
+	background-color: #fff;
+	margin-left: 200px;
+	padding: 20px;
+}
+
+h2 {
+	margin: 10px 0;
+}
+
+p {
+	margin: 10px 0;
+	line-height: 1.5em;
+}
+
+footer {
+	background-color: yellow;
+	height: 30px;
+	clear: both;
+}

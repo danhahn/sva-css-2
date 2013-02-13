@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Animation</title>
+	
+	<style>
+	.box {
+		border: 2px solid black;
+		background-color: red;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		
+		-moz-animation-name: slide;
+		-moz-animation-duration: 5s;
+		-moz-animation-iteration-count: infinite;
+		-moz-animation-timing-function: linear;
+		-moz-animation-direction: alternate;
+	}
+	
+	.logo {
+		background: url(http://www.svahtml.com/images/chrome.jpeg);
+		background-size: 150px 150px;
+		width: 150px;
+		height: 150px;
+		
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -75px;
+		margin-top: -75px;
+		
+		-moz-animation-name: logo;
+		-moz-animation-duration: 5s;
+		-moz-animation-iteration-count: infinite;
+		-moz-animation-timing-function: linear;
+	}
+	
+	
+	@-moz-keyframes slide {
+		0% {
+			top: 0;
+			left: 0;
+		}
+		50% {
+			top: 100px;
+			left: 100px;
+			width: 200px;
+			height: 200px;
+		}
+		75% {
+			background-color: orange;
+		}
+		100% {
+			width: 150px;
+			height: 150px;
+			opacity: .5;
+			top: 0;
+			left: 200px;
+		}
+	}
+	
+	
+	@-moz-keyframes logo {
+		from {
+			-moz-transform: rotate(0deg) ;
+		}
+		to {
+			-moz-transform: rotate(359deg);
+		}
+	}
+	
+	</style>
+	
+</head>
+<body>
+
+	<div class="box"></div>
+	
+	<div class="logo"></div>	
+</body>
+</html>

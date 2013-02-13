@@ -1,0 +1,112 @@
+@media screen and (max-width: 980px) {
+	#pagewrap {
+		width: 95%;
+	}
+	
+	#content {
+		width: 60%;
+		padding: 3% 4%;
+	}
+	
+	#sidebar {
+		width: 30%;
+	}
+	
+	#sidebar .widget {
+		padding: 8% 7%;
+		margin-bottom: 10px;
+	}
+	
+	.post-image img {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#header {
+		height: auto;
+	}
+	
+	#searchform {
+		top: 5px;
+		right: 0;
+		bottom: inherit;
+	}
+	
+	#searchform #s,
+	#searchform #s:focus {
+		width: 70px;
+	}
+	
+	#main-nav {
+		position: static;
+		overflow: hidden;
+	}
+	
+	#site-logo {
+		position: static;
+		margin-top: 10px;
+	}
+	
+	#site-logo a {
+		width: 150px;
+		height: 45px;
+		background-size: 100%;
+	}
+	
+	#header h2 {
+		position: static;
+		margin-bottom: 15px;
+	}
+	
+	#content {
+		float: none;
+		width: auto;
+		margin: 20px 0;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+		margin: 0;
+	}
+	
+	#sidebar .widget {
+		padding: 3% 4%;
+		width: 40%;
+		background-color: rgba(255,255,255,.5);
+		float: left;
+		margin: 0 0 10px 10px;
+		height: 140px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#main-nav li:first-child {
+		margin: 0;
+		border-top: none;
+	}
+	
+	#main-nav li {
+		float: none;
+		border-top: 1px solid white;
+	}
+	
+	#main-nav li a {
+		padding: 10px 8px;
+		font-size: .9em;
+	}
+	
+	#sidebar .widget {
+		width: auto;
+		margin: 0 0 10px;
+		float: none;
+		height: auto;
+	}
+}
+
+
+
+
+
+

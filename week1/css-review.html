@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Review of CSS Selectors</title>
+	<!-- HTML Comment -->
+	<style type="text/css">
+	/* CSS Comment */
+	
+	/* tag name selector */
+	h1 {
+		color: yellow;
+	}
+	
+	h2 {
+		color: green;
+	}
+	
+	strong {
+		color: teal;
+		font-weight: normal;
+	}
+	
+	/* class name selector */
+	.first {
+		color: purple;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	
+	/* id name selector */
+	#location {
+		color: orange;
+	}
+		
+	</style>
+</head>
+
+<body>
+<h1 style="color:red;">Intro to CSS</h1>
+
+<div id="location">	
+	<h2 class="first">Location of CSS files</h2>
+	<p class="first">All CSS can be written in one of three locations.</p>
+
+	<p>Paragraph Text. <a href="#">Paragraph Text.</a> Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. </p>
+	<p>Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. </p>
+	<p><span>Paragraph Text.</span> Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. </p>
+
+	<ol>
+		<li class="first"><strong>External file</strong> - HTML can include an .css file in the HTML. This File will be include in the HEAD tag. (<em>.css file</em>)</li>
+		<li><strong>Embedded Style</strong> - a block of code on an HTML file that defines an area where CSS can be written.(<em>style tag</em>)</li>
+		<li><strong>Inline</strong> - style attribute is applied to directly to and HTML element. (<em>style=""</em>)</li>
+	</ol>
+</div>
+
+<div id="selector">	
+	<h2>CSS Selectors</h2>
+	<p>Selectors are the way that CSS is connected to the HTML.</p>
+
+	<p>Paragraph Text. <a href="#">Paragraph Text.</a> Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. </p>
+	<p>Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. </p>
+	<p><span>Paragraph Text.</span> Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. Paragraph Text. </p>
+	
+	<ul>
+		<li class="first"><strong>Tag Name selectors</strong> - CSS will use the HTML tag as the link to the elements. (<em>h1 or p</em>)</li>
+		<li><strong>Class Name selector</strong> - CSS styles elements that have the HTML attribute of "class" with a like name. (<em>class="className" and .className</em>)</li>
+		<li><strong>ID Name selector</strong> - CSS styles the element that has the HTML attribute of "id" with a like name. (<em>id="idname" and #idname</em>)</li>
+	</ul>
+</div>	
+	
+<h2>Additional Notes</h2>
+<p><strong>Note</strong> - The browser is the lowest level of definition for the page.</p>
+
+<strong>Note</strong> - All text must be wrapped with some HTML element (this is invalid HTML)
+
+</body>
+</html>

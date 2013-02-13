@@ -1,0 +1,71 @@
+body {
+	font: 12px/1.5em arial;
+	color: #666;
+}
+
+h1 {
+	color: #df0024; 
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #009f3d;
+	font-variant: small-caps;
+	letter-spacing: -1px;
+}
+
+
+p {
+	text-align: justify;
+	text-indent: 20px;
+}
+
+a {
+	color: #0085c7;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:link {
+	color: teal;
+}
+
+a:visited {
+	color: yellow;
+}
+
+a:active {
+	color: red;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+	width: 700px;
+}
+
+td, th {
+	text-align: center;
+}
+
+th {
+	background-color: #000;
+	color: #fff;
+	font-style: italic;
+}
+
+#site {
+	width: 800px;
+}
+
+.odd {
+	background-color: #f4c300;
+}
+
+.even {
+	background-color: #eceae1;
+}

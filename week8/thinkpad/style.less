@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/css?family=Strait);
+
+@white: #fff;
+@padding: 5px;
+@left: 20px;
+@offset: 7px;
+@height: 19px;
+@color: #a93c2a;
+@dark: darken(@color, 12%);
+@light: lighten(@color, 10%);
+
+.ad h2, .ad p {
+	margin: 0;
+	line-height: 1em;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-family: 'Strait', sans-serif;
+	color: @white;
+	letter-spacing: 3px;
+}
+
+.ad {
+	h2 {
+		background-color: @color;
+		display: inline-block;
+		padding: @padding @padding 2px;
+		margin-left: @left;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: @left * -1;
+			border-right: @left solid @dark;
+			border-top: 31px solid transparent;
+		}
+	}
+	p {
+		span {
+			background-color: @light;
+			display: inline-block;
+			padding: @padding;
+			position: relative;
+			&:first-child{
+				&:before {
+					content: "";
+					width: @offset;
+					height: @height;
+					background-color: #72271a;
+					position: absolute;
+					top: @offset;
+					right: -@offset;
+				}
+			}
+			&:last-child {
+				position: relative;
+				top: @offset;
+				left: @offset;
+				&:before {
+					border-left: @offset solid #74271a;
+					border-top: @offset solid transparent;
+					content: "";
+					position: absolute;
+					left: -@offset;
+					top: -@offset;
+				}
+				&:after {
+					border-bottom: @offset solid transparent;
+					border-right: @offset solid #74271a;
+					content: "";
+					position: absolute;
+					left: -@offset;
+					bottom: 0;
+				}
+			}
+		}
+	}
+}

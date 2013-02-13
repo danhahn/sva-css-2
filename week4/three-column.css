@@ -1,0 +1,48 @@
+body {
+	font: 12px arial;
+	background-color: #c0c0c0;
+	margin: 0;
+}
+
+#site {
+	width: 1000px;
+	margin: 0 auto;
+	background: url(images/three-column-adv.png);
+}
+
+header {
+	background-color: aqua;
+	height: 75px;
+}
+
+nav, article, aside {
+	float: left;
+}
+
+nav {
+	width: 200px;
+	height: 200px;
+}
+
+article {
+	width: 560px;
+	padding: 20px;
+	height: 600px;
+}
+
+aside {
+	width: 200px;
+	height: 300px;
+}
+
+footer {
+	clear: both;
+	background-color: blue;
+	height: 30px;
+}
+
+
+
+
+
+

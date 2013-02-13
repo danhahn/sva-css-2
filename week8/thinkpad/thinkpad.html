@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Think Pad Ad</title>
+	
+	<style type="text/css">
+	@import url(http://fonts.googleapis.com/css?family=Strait);
+	
+	.ad h2,.ad p {
+		margin: 0;
+		line-height: 1em;
+		text-transform: uppercase;
+		font-weight: normal;
+		font-family: 'Strait', sans-serif;
+		color: #fff;
+		letter-spacing: 3px;
+	}
+	
+	.ad h2 {
+		background-color: #ac3d2c;
+		display: inline-block;
+		padding: 5px 5px 2px;
+		margin-left: 20px;
+		position: relative;
+	}
+	
+	.ad h2:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -20px;
+		border-right: 20px solid #74271a;
+		border-top: 31px solid transparent;
+	}
+	
+	.ad p span {
+		background-color: #d8523d;
+		display: inline-block;
+		padding: 5px;
+		position: relative;
+	}
+	
+	.ad p span:first-child:after {
+		content: "";
+		width: 10px;
+		height: 16px;
+		background-color: #72271a;
+		position: absolute;
+		top: 10px;
+		right: -10px;
+	}
+	
+	.ad p span:last-child {
+		position: relative;
+		top: 10px;
+		left: 10px;
+	}	
+	
+	.ad p span:last-child:before {
+		border-left: 10px solid #74271a;
+		border-top: 10px solid transparent;
+		content: "";
+		position: absolute;
+		left: -10px;
+		top: -10px;
+	}
+	
+	.ad p span:last-child:after {
+		border-bottom: 10px solid transparent;
+		border-right: 10px solid #74271a;
+		content: "";
+		position: absolute;
+		left: -10px;
+		bottom: 0;
+	}
+	
+	
+	
+	</style>
+	
+</head>
+<body>
+	<div class="ad">
+		<h2>Thinkpad</h2>
+		<p>
+			<span>Black Friday</span><span>Deals</span>
+		</p>
+	</div>
+</body>
+</html>

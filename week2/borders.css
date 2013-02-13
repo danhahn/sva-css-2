@@ -1,0 +1,48 @@
+body {
+	font: 12px arial;
+	color: gray;
+}
+
+div {
+	/*border-width: 1px;
+	border-style: solid;
+	border-color: blue;*/
+	
+	border: 1px solid blue;
+}
+
+.example {
+	border-color: red;
+	
+	border-bottom-width: 10px;
+	border-bottom-style: dotted;
+	border-bottom-color: black;
+	
+	border-bottom: 9px solid green;
+	
+}
+
+.content {
+	border-top: 1px solid green;
+}
+
+h1 {
+	border-bottom: 2px solid black;
+}
+
+ul li {
+	border-bottom: 1px solid gray;
+	color: black;
+	list-style: none;
+}
+
+ul li.last {
+	border-bottom: none;
+}
+
+
+
+
+
+
+

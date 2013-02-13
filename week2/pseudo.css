@@ -1,0 +1,28 @@
+/* css comment */
+body {
+	font: 12px arial;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: teal;
+}
+
+a:link {
+	color: green;
+}
+
+a:visited {
+	color: orange;
+}
+
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+a:active {
+	color: aqua;
+	font-style: italic;
+}

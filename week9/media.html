@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+
+	<!-- disable iPhone inital scale -->
+
+	<title>Adaptive Design With Media Queries</title>
+
+	<!-- main css -->
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="media-queries.css">
+
+</head>
+
+<body>
+
+<div id="pagewrap">
+
+	<header id="header">
+
+		<hgroup>
+			<h1 id="site-logo"><a href="#">SVA CSS</a></h1>
+			<h2 id="site-description">CSS The way it should be!</h2>
+		</hgroup>
+
+		<nav>
+			<ul id="main-nav" class="clearfix">
+				<li><a href="http://webdesignerwall.com">Home</a></li>
+				<li><a href="http://themify.me">Themify</a></li>
+				<li><a href="http://icondock.com">IconDock</a> </li>
+				<li><a href="http://ndesign-studio.com">N.Design</a></li>
+			</ul>
+			<!-- /#main-nav --> 
+		</nav>
+
+		<form id="searchform">
+			<input type="search" id="s" placeholder="Search">
+		</form>
+
+	</header>
+	<!-- /#header -->
+	
+	<div id="content">
+
+		<article class="post clearfix">
+
+			<header>
+				<h1 class="post-title"><a href="#">Just a Post Title</a></h1>
+				<p class="post-meta"><time class="post-date" datetime="2011-05-08" pubdate>May 8, 2011</time> <em>in</em> <a href="#">Category</a></p>
+			</header>
+			
+			<figure class="post-image"> 
+				<img src="images/sample-image.jpg" />
+			</figure>
+			
+			<p>Fusce ut sem est. In eu sagittis felis. In gravida arcu ut neque ornare vitae rutrum turpis vehicula. Nunc ultrices sem mollis metus rutrum non malesuada metus fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque interdum rutrum quam, a pharetra est pulvinar ac. Vestibulum congue nisl magna. Ut vulputate odio id dui convallis in adipiscing libero condimentum. Nunc et pharetra enim. Praesent pharetra, neque et luctus tempor, leo sapien faucibus leo, a dignissim turpis ipsum sed libero. Sed sed luctus purus. Aliquam faucibus turpis at libero consectetur euismod. Nam nunc lectus, congue non egestas quis, condimentum ut arcu. Nulla placerat, tortor non egestas rutrum, mi turpis adipiscing dui, et mollis turpis tortor vel orci. Cras a fringilla nunc. Suspendisse volutpat, eros congue scelerisque iaculis, magna odio sodales dui, vitae vulputate elit metus ac arcu. Mauris consequat rhoncus dolor id sagittis. Cras tortor elit, aliquet quis tincidunt eget, dignissim non tortor.</p>
+
+		</article>
+		<!-- /.post -->
+
+	</div>
+	<!-- /#content --> 
+	
+	
+	<aside id="sidebar">
+
+		<section class="widget">
+			<h4 class="widgettitle">Sidebar</h4>
+			<ul>
+				<li><a href="#">WordPress</a> (3)</li>
+				<li><a href="#">Design</a> (23)</li>
+				<li><a href="#">Design </a>(18)</li>
+			</ul>
+		</section>
+		<!-- /.widget -->
+
+		<section class="widget clearfix">
+			<h4 class="widgettitle">Flickr</h4>
+
+			<div class="flickr" id="flickr1">
+				<a href="http://www.flickr.com/photos/52839779@N02/4920460612/">
+					<img src="http://farm5.staticflickr.com/4096/4920460612_f2c30bf058_s.jpg" alt="A photo on Flickr" title="POGO" height="75" width="75">
+				</a>
+			</div>
+			<div class="flickr" id="flickr2">
+				<a href="http://www.flickr.com/photos/52839779@N02/4920460484/">
+					<img src="http://farm5.staticflickr.com/4095/4920460484_304bfbecd1_s.jpg" alt="A photo on Flickr" title="WebDesign #136 Magazine Cover" height="75" width="75">
+				</a>
+			</div>
+			<div class="flickr" id="flickr3">
+				<a href="http://www.flickr.com/photos/52839779@N02/4872829119/">
+					<img src="http://farm5.staticflickr.com/4081/4872829119_3fb00ef561_s.jpg" alt="A photo on Flickr" title="koi" height="75" width="75">
+				</a>
+			</div>
+			<div class="flickr" id="flickr4">
+				<a href="http://www.flickr.com/photos/52839779@N02/4872828839/">
+					<img src="http://farm5.staticflickr.com/4135/4872828839_5dc864f058_s.jpg" alt="A photo on Flickr" title="abstract phoenix" height="75" width="75">
+				</a>
+			</div>
+			<div class="flickr" id="flickr5">
+				<a href="http://www.flickr.com/photos/52839779@N02/4873437116/">
+					<img src="http://farm5.staticflickr.com/4119/4873437116_a66ffaa9f5_s.jpg" alt="A photo on Flickr" title="abstract peacock" height="75" width="75">
+				</a>
+			</div>
+			<div class="flickr" id="flickr6">
+				<a href="http://www.flickr.com/photos/52839779@N02/4872827889/">
+					<img src="http://farm5.staticflickr.com/4143/4872827889_4d79078887_s.jpg" alt="A photo on Flickr" title="flow" height="75" width="75">
+				</a>
+			</div>
+			<div class="flickr" id="flickr7">
+				<a href="http://www.flickr.com/photos/52839779@N02/4873436142/">
+					<img src="http://farm5.staticflickr.com/4143/4873436142_bccfa75e57_s.jpg" alt="A photo on Flickr" title="phoenix" height="75" width="75">
+				</a>
+			</div>
+			<div class="flickr" id="flickr8">
+				<a href="http://www.flickr.com/photos/52839779@N02/4872827433/">
+					<img src="http://farm5.staticflickr.com/4118/4872827433_003ef3523d_s.jpg" alt="A photo on Flickr" title="bamboo" height="75" width="75">
+				</a>
+			</div>
+		
+		</section>
+		<!-- /.widget -->
+						
+	</aside>
+	<!-- /#sidebar -->
+
+	<footer id="footer">
+	
+		<p>Tutorial by <a href="http://webdesignerwall.com">Web Designer Wall</a></p>
+
+	</footer>
+	<!-- /#footer --> 
+	
+</div>
+<!-- /#pagewrap -->
+
+</body>
+</html>

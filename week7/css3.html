@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS 3</title>	
+	
+	<style type ="text/css">
+	body {
+		font: 12px arial;
+		background-color: #c0c0c0;
+		color: #333;
+	}
+	
+	#container {
+		width: 800px;
+		padding: 20px 20px 200px;
+		margin: 0 auto;
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 0 2px 5px rgba(0,0,0,.3);
+	}
+	
+	.border-radius {
+		background-color: #42a95f;
+		padding: 20px;
+		margin: 10px 0;
+		border-radius: 10px;
+		border-top-left-radius: 10px 30px;
+	}
+	
+	.date {
+		background-color: #92a942;
+		width: 50px;
+		height: 50px;
+		padding: 20px;
+		font-size: 20px;
+		line-height: 1em;
+		text-transform: uppercase;
+		color: white;
+		text-align: center;
+		border-radius: 50%;
+		position: absolute;
+		margin-left: -135px;
+		margin-top: -30px;
+		box-shadow: 1px 1px 4px rgba(0,0,0,.4) inset;
+		-moz-transform: rotate(-30deg) scale(.9);
+		-moz-transition: all .3s ease .2s;
+		-webkit-transform: rotate(-30deg) scale(.9);
+		-webkit-transition: all .3s ease .2s;
+		-ms-transition: all .3s ease .2s;
+	}
+	
+	.date:hover {
+		box-shadow: 1px 1px 4px rgba(0,0,0,.4);
+		-moz-transform: rotate(-15deg) scale(1.1);
+		-webkit-transform: rotate(-15deg) scale(1.1);
+		background-color: orange;
+	}
+	
+	.date span {
+		display: block;
+		font-size: 43px;
+		padding-top: 7px;
+	}
+	
+	.image {
+		margin: 10px 0;
+		border: 3px solid black;
+		display: inline-block;
+		border-radius: 15px;
+		overflow: hidden;
+		padding: 15px 15px 25px;
+		background-color: #eaeaea;
+	}
+	
+	.image img {
+		display: block;
+		border-radius: 10px;
+	}
+	
+	.box-shadow {
+		padding: 20px;
+		background-color: #66ffcc;
+		margin: 10px 0;
+		box-shadow: 2px 2px 10px rgba(0,0,0,.5) inset;
+	}
+	
+	input[type="text"] {
+		border: 2px solid rgba(0,0,0,.7);
+		padding: 3px;
+		font-size: 1.5em;
+		width: 100px;
+		border-radius: 3px;
+		box-shadow: 1px 2px 3px rgba(0,0,0,.3) inset;
+		
+		-moz-transition: all .3s ease .5s;
+		-webkit-transition: all .3s ease .5s;
+	}
+	
+	input[type="text"]:focus {
+		width: 200px;
+		background-color: gray;
+		border-color: black;
+		color: white;
+	}
+	
+	.manyDrop {
+		margin: 10px 0;
+		padding: 20px;
+		background-color: orange;
+		box-shadow: 2px 2px 2px red,
+					-4px -4px 4px blue,
+					3px 3px 10px black inset;
+	}
+	
+	h1 {
+		text-shadow: 1px 1px 3px black;
+	}
+	
+	h2 {
+		text-shadow: 2px 2px 2px red,
+					 4px 4px 2px orange,
+					 6px 6px 2px purple;
+	}
+	
+	.opacity {
+		background-color: teal;
+		padding: 20px;
+		font-size: 20px;
+		font-weight: bold;
+		opacity: .5;
+	}
+	
+	.gradient {
+		height: 100px;
+		padding: 20px;
+		font-size: 20px;
+		margin: 10px 0;
+		background: rgb(30,87,153); /* Old browsers */
+		background: -moz-linear-gradient(-45deg,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(50%,rgba(41,137,216,1)), color-stop(51%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(-45deg,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(-45deg,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(-45deg,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* IE10+ */
+		background: linear-gradient(135deg,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}
+	
+	.rotate {
+		width: 100px;
+		height: 100px;
+		padding: 10px;
+		color: white;
+		background-color: purple;
+		-moz-transform: rotate(45deg) scale(.5);
+		-webkit-transform: rotate(45deg) scale(.5);
+	}
+	
+	.rotate:hover {
+		-moz-transform: rotate(50deg) scale(1.1);
+	}
+	
+	.box-center {
+		height: 100px;
+		width: 100%;
+		background-color: #c0c0c0;
+		box-shadow: 0 0 10px rgba(0,0,0,.3) inset;
+		display: -moz-box;
+		-moz-box-orient: horizontal;
+		-moz-box-pack: center;
+		-moz-box-align: center;
+	}
+	
+	.item h2, .item p {
+		margin: 0;
+		text-shadow: none;
+	}
+	
+	.columns {
+		border: 1px solid black;
+		background-color: orange;
+		width: 500px;
+	}
+	
+	.columns:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	
+	.item {
+		width: 31.3%;
+		background-color: red;
+		float: left;
+		border: 3px solid blue;
+		padding: 10px;
+		margin: 1%;
+		-moz-box-sizing: border-box;
+	}
+
+	
+	
+	
+	</style>
+	
+</head>
+
+<body>
+	
+<div id="container">
+	<h1>CSS 3</h1>
+	<h2>border-radus</h2>
+	
+	<div class="border-radius">
+		border-radius:
+	</div>
+	
+	<div class="date">
+		Mar
+		<span>28</span>
+	</div>
+	
+	<div class="image">
+		<img src="http://www.svahtml.com/images/cars_lg.jpg" alt=""/>
+	</div>
+	
+	<h2>Box Shadow</h2>
+	
+	<div class="box-shadow">
+		box-shadow:
+	</div>
+	
+	<div class="input">
+		<input type="text" placeholder="Search"/>
+	</div>
+	
+	<div class="manyDrop">
+		many drops
+	</div>
+	
+	<div class="opacity">
+		opacity
+	</div>
+	
+	<h2>Gradient</h2>
+	
+	<div class="gradient">
+		gradient
+	</div>
+	
+	<div class="gradient2"></div>
+	
+	<h2>Rotate</h2>
+	
+	<div class="rotate">
+		Rotate
+	</div>
+
+	<h2>Box Center</h2>
+
+	<div class="box-center">
+		<p>Content to be centered</p>
+	</div>
+
+	<h2>Box Sizing</h2>
+
+	<div class="columns">
+		<div class="item">
+			<h2>Header</h2>
+			<p>Content. Content. Content. Content. Content. Content. Content. </p>
+			<a href="">Link to Page</a>
+		</div>
+		<div class="item">
+			<h2>Header</h2>
+			<p>Content. Content. Content. Content. Content. Content. Content. </p>
+			<a href="">Link to Page</a>
+		</div>
+		<div class="item">
+			<h2>Header</h2>
+			<p>Content. Content. Content. Content. Content. Content. Content. </p>
+			<a href="">Link to Page</a>
+		</div>
+	</div>
+		
+</div>
+
+</body>
+</html>

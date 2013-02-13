@@ -1,0 +1,7 @@
+body {
+	background-color: #c0c0c0;
+}
+
+nav ul li.active {
+	background-color: red;
+}
